@@ -23,7 +23,7 @@ const userDetail = async function (req, res) {
         let userName = req.params.userName;
 
         if (!validator.isValidRequestParam(userName)) {
-            return res.status(400).send({ status: false, msg: `${username} is not valid or does not exist}` });
+            return res.status(400).send({ status: false, msg: `${userName} is not valid or does not exist}` });
         }
 
         const userDetails = await userModel.findOne({ userName: userName });

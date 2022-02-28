@@ -14,5 +14,8 @@ router.get('/user/:userName', userController.userDetail);
 
 //subscription APIS
 router.post('/subscription', subscriptionController.registrationOfSubscription)
+router.get('/subscription/:userName/:inputDate', subscriptionController.getSubscriptionWithDate)
+router.get('/subscription/:userName', subscriptionController.getSubscription)
+
 
 module.exports = router; 
