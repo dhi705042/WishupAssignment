@@ -1,0 +1,24 @@
+{
+  "name": "wishupassignment",
+  "version": "1.0.0",
+  "description": "assignment by wishup company",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dhi705042/WishupAssignment.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dhi705042/WishupAssignment/issues"
+  },
+  "homepage": "https://github.com/dhi705042/WishupAssignment#readme",
+  "dependencies": {
+    "express": "^4.17.3",
+    "mongoose": "^6.2.3"
+  }
+}
