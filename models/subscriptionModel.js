@@ -11,8 +11,8 @@ const subscriptionSchema = new mongoose.Schema({
         required: "planId is required",
         enum: ["FREE", "TRIAL", "LITE_1M", "PRO_1M", "LITE_6M", "PRO_6M"]
     },
-    startDate: { 
-        type: String, 
+    startDate: {
+        type: String,
         required: "Start Date is required"
     }
 

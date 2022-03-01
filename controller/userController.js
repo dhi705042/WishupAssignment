@@ -9,6 +9,11 @@ const userRegistration = async function (req, res) {
         if (!validator.isValidRequestParam(userName)) {
             return res.status(400).send({ status: false, msg: "request param is not valid, please provide UserName" });
         }
+
+        checkUserExists = await userModel.findOne({ userName: userName })
+        if (checkUserExists) {
+            return res.status(400).send({ status: false, msg: `${userName} already exists` });
+        }
         const userCreated = await userModel.create({ userName: userName });
 
         res.status(200).send({ status: true, data: userCreated });

@@ -8,8 +8,8 @@ const isValid = function (value) {
 
 const isValidRequestParam = function (userName) {
     if (typeof userName === "string" && userName.trim().length === 0) return false;
-   return true
-  };
+    return true
+};
 
 const isValidRequestBody = function (requestBody) {
     return Object.keys(requestBody).length > 0

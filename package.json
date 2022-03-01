@@ -19,6 +19,7 @@
   "homepage": "https://github.com/dhi705042/WishupAssignment#readme",
   "dependencies": {
     "express": "^4.17.3",
+    "moment": "^2.29.1",
     "mongoose": "^6.2.3"
   }
 }

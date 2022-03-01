@@ -13,7 +13,7 @@ router.put('/user/:userName', userController.userRegistration);
 router.get('/user/:userName', userController.userDetail);
 
 //subscription APIS
-router.post('/subscription', subscriptionController.registrationOfSubscription)
+router.post('/subscription', subscriptionController.registerUserSubscription)
 router.get('/subscription/:userName/:inputDate', subscriptionController.getSubscriptionWithDate)
 router.get('/subscription/:userName', subscriptionController.getSubscription)
 
