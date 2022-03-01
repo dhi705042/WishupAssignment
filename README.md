@@ -82,9 +82,11 @@ GET /subscription/< username >/< date >
 { "status": "SUCCESS"
 ,
 "amount": -200.0 }
+
 Sample Input:
 /subscription/jay/2020-02-29
 Note that the date in the above is optional:
+
 /subscription/jay
 Expected Output:
 When input date is specified
@@ -96,6 +98,7 @@ Sample output
 { "plan_id": "PRO_1M"
 ,
 "days_left": 3 }
+
 When input date is NOT specified
 List all subscription entries available in database
 for user with start and valid till dates.
