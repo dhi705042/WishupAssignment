@@ -6,12 +6,14 @@ service for a "Subscription as a Service" startup . Your
 REST service will be used by companies that will define
 subscriptions plans to which the users of the platform can
 subscribe to.
+
 Instructions
 General Instructions
 The submission will be evaluated for:
 Correctness
 Code Readability: Please write well formatted,
 readable code with appropriate variable naming
+
 Technical Instructions
 You MUST implement the API using Nodejs. You can
 use any framework on top of Node.
@@ -23,9 +25,13 @@ how your code evolved.
 API Service
 The primary aspect of this programming challenge is to
 implement the following two APIs:
+
 /user
+
 /subscription
+
 The details of each of these APIs are as follows:
+
 /user
 This is a simple CRUD API that adds a user to DB.
 PUT /user/
@@ -39,6 +45,7 @@ Sample Output:
 {
 "user_name": "jay"
 ,
+
 /subscription
 This is the primary API being tested in this challenge.
 This will need to provide mechanisms to:
